@@ -13,7 +13,7 @@ namespace ContourDetection
         static void Main(string[] args)
         {
 
-            Mat image = Cv2.ImRead(@"C:\Users\Laptop\Desktop\8.png");
+            Mat image = Cv2.ImRead(@"C:\...\...\...\8.png");
 
 
             Point[][] contours = GetAllContours(image);
@@ -21,7 +21,7 @@ namespace ContourDetection
             Cv2.DrawContours(imageClone, contours, -1, new Scalar(250, 0, 0), thickness: 1);
             Cv2.ImShow("Contours", imageClone);
             Cv2.ImShow("Original", image);
-            string outputImagePath = @"C:\Users\Laptop\Desktop\krawedzie\12.png";
+            string outputImagePath = @"C:\...\...\...\krawedzie\12.png";
             Cv2.ImWrite(outputImagePath, imageClone);
             Cv2.WaitKey();
 
